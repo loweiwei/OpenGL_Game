@@ -1,0 +1,31 @@
+﻿# ---- Build outputs ----
+build/
+out/
+bin/
+Debug/
+Release/
+x64/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+
+# ---- CMake ----
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# ---- VS / VSCode ----
+.vs/
+.vscode/
+*.user
+*.suo
+*.vcxproj*
+*.filters
+
+# ---- OS ----
+.DS_Store
+Thumbs.db

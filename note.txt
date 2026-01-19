@@ -1,0 +1,31 @@
+| 方向想要往哪升高  | dirX | dirZ |
+| --------- | ---- | ---- |
+| 從 南 → 北   | 0    | 1    |
+| 從 北 → 南   | 0    | -1   |
+| 從 西 → 東   | 1    | 0    |
+| 從 東 → 西   | -1   | 0    |
+| 從 左下 → 右上 | 1    | 1    |
+| 從 右上 → 左下 | -1   | -1   |
+
+//terrain_water
+addSlope
+addCrevasse 
+....
+generateTerrain
+addLake
+addCrevasseWater
+...
+waterManager->generateAll(*t);
+
+1. WorldTile + 新的種類
+霧霧霧霧霧霧霧霧霧霧霧    
+霧 土地 - 海 - 土地 霧
+霧霧霧霧霧霧霧霧霧霧霧     
+
+
+{20, 10},
+                    {30, 12},
+                    {40, 18},
+                    {47, 30},
+                    {45, 45},
+                    {40, 60}
