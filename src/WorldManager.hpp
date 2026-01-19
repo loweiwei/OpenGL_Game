@@ -11,7 +11,6 @@
 #include "IceMountain.hpp"
 #include "Flag.hpp"
 #include "WaterManager.hpp"
-#include "FogWall.hpp"
 #include "Player.hpp"
 #include "tent.hpp"
 #include "Collision.hpp"
@@ -97,17 +96,15 @@ private:
 
     float tileSize;
     std::vector<WorldTile> tiles;
-    std::vector<FogWall> fogWalls;
     std::vector<ObjObject*> objObjects;
 
 
     WorldTile* findTile(int row, int col);
     Terrain* createTerrainFor(TileType type, WorldTile& tile);
-    
+
     void setupStartAreaObjects(WorldTile& tile);
     void setupBigIceMountains(WorldTile& tile);
     void setupFloatingWaterAndIce(WorldTile& tile);
-
     void placeObjectsFor(WorldTile& tile);
-    void addFogBoundary();
+
 };

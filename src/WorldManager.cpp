@@ -551,8 +551,6 @@ void WorldManager::generate()
     for (auto& tile : tiles)
         placeObjectsFor(tile);
 
-    // 若之後要加 fog 邊界，可以在此呼叫
-    // addFogBoundary();
 }
 
 // ==================================================
