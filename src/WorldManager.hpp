@@ -12,7 +12,6 @@
 #include "Flag.hpp"
 #include "WaterManager.hpp"
 #include "Player.hpp"
-#include "tent.hpp"
 #include "Collision.hpp"
 #include "FogPostProcess.hpp"
 #include "Camera.h"
